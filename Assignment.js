@@ -23,3 +23,19 @@ console.log(woodResult);
 //Wood Calculator Function done;
 
 // Brick Calculator Function Work Below
+function brickCalculator(floorNum) {
+    let numberOfFeets = 0;
+    if(floorNum <= 10) {
+        numberOfFeets = 15;
+    }
+    if(floorNum > 10 && floorNum <= 20) {
+        numberOfFeets = 12;
+    }
+    if(floorNum > 20) {
+        numberOfFeets = 10;
+    }
+    let bricksNeeded = floorNum * numberOfFeets * 1000;
+    return 'The Number of Bricks Needed : ' + bricksNeeded + ' bricks';
+}
+
+console.log(brickCalculator(21));
