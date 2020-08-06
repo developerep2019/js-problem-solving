@@ -39,3 +39,26 @@ function brickCalculator(floorNum) {
 }
 
 console.log(brickCalculator(21));
+//bricks Calculation done;
+
+// Tiny Friends Function Below
+var friendsName = ['ali', 'aali', 'aaali', 'aaaali'];
+function tinyFriend(names) {
+
+    let tinyName = undefined;
+  
+    if (names.length > 0) {
+      for (let i = 0; i < names.length; i++) {
+        if (typeof names[i] === 'string' && (tinyName == undefined ||names[i].length < tinyName.length )) {
+          tinyName = names[i];
+        }
+      }
+    }
+  
+    return tinyName;
+  }
+  
+  
+  var output = tinyFriend(friendsName);
+  console.log(output);
+// TinyFrined Function work donw
